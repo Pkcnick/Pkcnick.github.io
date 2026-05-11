@@ -188,7 +188,7 @@ h1 {
   padding: 28px;
 }
 
-.profile-image {
+<!--.profile-image {
   width: 128px;
   height: 128px;
   border-radius: 32px;
@@ -200,6 +200,16 @@ h1 {
   font-weight: 800;
   letter-spacing: 0.06em;
   margin-bottom: 24px;
+}-->
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 32px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 24px;
+  border: 4px solid white;
+  box-shadow: 0 14px 32px rgba(20, 52, 80, 0.18);
 }
 
 .profile-card ul {
