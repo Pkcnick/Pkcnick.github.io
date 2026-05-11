@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prashant Kumar Choudhary | Quantum Machine Learning Researcher</title>
+  <meta name="description" content="Academic website of Prashant Kumar Choudhary, PhD Research Scholar in Physics working on Quantum Machine Learning, Quantum Architecture Search, and Quantum Error Correction." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">PKC</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">PhD Research Scholar · Physics · IIT (BHU), Varanasi</p>
+        <h1>Prashant Kumar Choudhary</h1>
+        <h2>Quantum Machine Learning · Quantum Architecture Search · Quantum Error Correction</h2>
+        <p class="hero-text">
+          I work on hybrid quantum-classical learning models, variational quantum circuits,
+          Bayesian optimization for quantum architecture search, and learning-based approaches
+          for quantum error correction.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#publications">View Publications</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="profile-image">PKC</div>
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Quantum Machine Learning</li>
+          <li>Variational Quantum Circuits</li>
+          <li>Quantum Architecture Search</li>
+          <li>Bayesian Optimization</li>
+          <li>Quantum Error Correction</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Academic Profile</h2>
+      </div>
+      <div class="content-grid">
+        <div class="card">
+          <h3>Current Position</h3>
+          <p>
+            PhD Research Scholar in Physics at the Indian Institute of Technology
+            (Banaras Hindu University), Varanasi.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Research Direction</h3>
+          <p>
+            My research focuses on designing, optimizing, and evaluating hybrid quantum-classical
+            models for near-term quantum computing applications.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Technical Stack</h3>
+          <p>
+            Python, Qiskit, PennyLane, PyTorch, PyTorch Geometric, scikit-learn,
+            LaTeX, and scientific visualization tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2>Main Research Themes</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">Theme 1</span>
+          <div>
+            <h3>Graph-Based Bayesian Optimization for Quantum Architecture Search</h3>
+            <p>
+              Development of graph neural network surrogates and uncertainty-aware acquisition
+              strategies for optimizing variational quantum circuit architectures under
+              hardware- and noise-aware constraints.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Theme 2</span>
+          <div>
+            <h3>Hybrid Quantum Neural Networks for Time-Series Prediction</h3>
+            <p>
+              Hybrid quantum-classical models for financial time-series regression using
+              custom variational quantum circuits and classical neural components.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Theme 3</span>
+          <div>
+            <h3>Quantum Machine Learning for Quantum Error Correction</h3>
+            <p>
+              Learning-based decoders, transfer-aware evaluation, and quantum architecture
+              search strategies for error correction codes such as Five-Qubit and Steane codes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Publications</p>
+        <h2>Selected Publications</h2>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <h3>HQNN-FSP: A Hybrid Classical-Quantum Neural Network for Regression-Based Financial Stock Market Prediction</h3>
+          <p class="pub-meta">Quantum Machine Intelligence, 2026</p>
+          <p>
+            A hybrid quantum-classical neural network framework for financial time-series forecasting
+            using a custom quantum neural network regressor.
+          </p>
+          <div class="pub-links">
+            <a href="#" target="_blank" rel="noopener">DOI / Journal Link</a>
+            <a href="#" target="_blank" rel="noopener">arXiv</a>
+            <a href="#" target="_blank" rel="noopener">BibTeX</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <h3>Graph-Based Bayesian Optimization for Quantum Architecture Search</h3>
+          <p class="pub-meta">Manuscript / Preprint</p>
+          <p>
+            A graph-based optimization framework combining variational quantum circuits,
+            graph neural network surrogates, and cost-aware Bayesian optimization.
+          </p>
+          <div class="pub-links">
+            <a href="#" target="_blank" rel="noopener">Paper Link</a>
+            <a href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Research Projects</h2>
+      </div>
+      <div class="content-grid">
+        <div class="card project-card">
+          <h3>BO + VQC + GNN Pipeline</h3>
+          <p>
+            Cost-aware Bayesian optimization of variational quantum circuits using graph neural
+            network surrogates and uncertainty calibration.
+          </p>
+          <a href="#" target="_blank" rel="noopener">GitHub Repository</a>
+        </div>
+        <div class="card project-card">
+          <h3>QML for Quantum Error Correction</h3>
+          <p>
+            Learning-based decoders and transfer-aware benchmarking for quantum error correction.
+          </p>
+          <a href="#" target="_blank" rel="noopener">Project Page</a>
+        </div>
+        <div class="card project-card">
+          <h3>Hybrid Quantum Neural Networks</h3>
+          <p>
+            Hybrid quantum-classical models for regression and prediction tasks.
+          </p>
+          <a href="#" target="_blank" rel="noopener">Code / Results</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">CV</p>
+        <h2>Curriculum Vitae</h2>
+      </div>
+      <div class="card cv-card">
+        <p>
+          Download my latest academic CV. Replace the file
+          <code>assets/Prashant_Kumar_Choudhary_CV.pdf</code> with your updated CV.
+        </p>
+        <a class="button primary" href="assets/Prashant_Kumar_Choudhary_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Profiles</h3>
+          <p>
+            <a href="#" target="_blank" rel="noopener">Google Scholar</a> ·
+            <a href="#" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="#" target="_blank" rel="noopener">ORCID</a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Address</h3>
+          <p>Department of Physics, IIT (BHU), Varanasi, India</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Prashant Kumar Choudhary. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
