@@ -1,1 +1,41 @@
+name: Update Google Scholar Citations
 
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-citations:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch Google Scholar citation data
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python .github/scripts/update_citations.py
+
+      - name: Commit updated citations.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add citations.json
+
+          if git diff --cached --quiet; then
+            echo "No citation changes to commit."
+          else
+            git commit -m "Update Google Scholar citation data"
+            git push
+          fi
