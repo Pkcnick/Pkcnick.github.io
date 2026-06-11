@@ -213,7 +213,7 @@ main,
   isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.75fr);
-  gap: 42px;
+  gap: 34px;
   align-items: center;
   min-height: 76vh;
 }
@@ -221,7 +221,7 @@ main,
 .hero::before {
   content: "";
   position: absolute;
-  inset: 42px 22px;
+  inset: 42px 18px;
   z-index: -1;
   border-radius: 32px;
   background:
