@@ -213,7 +213,7 @@ main,
   isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.75fr);
-  gap: 34px;
+  gap: 42px;
   align-items: center;
   min-height: 76vh;
 }
