@@ -725,3 +725,9 @@ code {
 .contact-grid p {
   overflow-wrap: anywhere;
 }
+
+@media (max-width: 600px) {
+  .contact-grid a {
+    font-size: 0.92rem;
+  }
+}
