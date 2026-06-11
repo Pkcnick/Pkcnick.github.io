@@ -428,6 +428,32 @@
       restartParticles();
       window.addEventListener("resize", restartParticles);
     }
+  
+
+    <script>
+      fetch("citations.json")
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Citation file not found");
+          }
+          return response.json();
+        })
+        .then(data => {
+          document.getElementById("scholarCitations").textContent = data.citations ?? "--";
+          document.getElementById("scholarHIndex").textContent = data.h_index ?? "--";
+          document.getElementById("scholarI10Index").textContent = data.i10_index ?? "--";
+
+          if (data.updated_utc) {
+            document.getElementById("scholarUpdated").textContent = "Updated: " + data.updated_utc;
+          }
+        })
+        .catch(() => {
+          document.getElementById("scholarCitations").textContent = "View";
+          document.getElementById("scholarHIndex").textContent = "--";
+          document.getElementById("scholarI10Index").textContent = "--";
+          document.getElementById("scholarUpdated").textContent = "Open Google Scholar profile";
+        });
+    </script>
   </script>
 
 </body>
