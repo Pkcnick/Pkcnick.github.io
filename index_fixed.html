@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prashant Kumar Choudhary | Quantum Machine Learning Researcher</title>
+  <meta name="description" content="Academic website of Prashant Kumar Choudhary, PhD Research Scholar in Physics working on Quantum Machine Learning, Quantum Architecture Search, and Quantum Error Correction." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="quantumCanvas" aria-hidden="true"></canvas>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="quantum-grid"></div>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">PKC</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">PhD Research Scholar · Quantum Machine Learning (Physics) · IIT (BHU), Varanasi, India</p>
+        <h1>Prashant Kumar Choudhary</h1>
+        <h2>Quantum Machine Learning · Quantum Architecture Search · Quantum Error Correction</h2>
+        <p class="hero-text">
+          I work on hybrid quantum-classical learning models, variational quantum circuits,
+          Bayesian optimization for quantum architecture search, and learning-based approaches
+          for quantum error correction.
+        </p>
+        <div class="quantum-tags">
+          <span>QML</span>
+          <span>VQC</span>
+          <span>QAS</span>
+          <span>QEC</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#publications">View Publications</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <!--<div class="profile-image">PKC</div>-->
+        <img class="IMG_8726-photo" src="IMG_8726.jpg" alt="Prashant Kumar Choudhary">
+        <div class="quantum-orbit" aria-hidden="true">
+          <span class="core"></span>
+          <span class="electron e1"></span>
+          <span class="electron e2"></span>
+          <span class="electron e3"></span>
+        </div>
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Quantum Computing</li>
+          <li>Quantum Machine Learning</li>
+          <li>Quantum Circuit Design</li>
+          <li>Quantum Architecture Search</li>
+          <li>Quantum Error Correction</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Academic Profile</h2>
+      </div>
+      <div class="content-grid">
+        <div class="card">
+          <h3>Current Position</h3>
+          <p>
+            PhD Research Scholar in Quantum machine learning (Physics) at the Indian Institute of Technology
+            (Banaras Hindu University), Varanasi, India.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Research Direction</h3>
+          <p>
+            My research focuses on designing, optimizing, and evaluating hybrid quantum-classical
+            models for near-term quantum computing applications.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Technical Stack</h3>
+          <p>
+            Python, Qiskit, PennyLane, PyTorch, PyTorch Geometric, scikit-learn,
+            LaTeX, and scientific visualization tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2>Main Research Themes</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">Theme 1</span>
+          <div>
+            <h3>Graph-Based Bayesian Optimization for Quantum Architecture Search</h3>
+            <p>
+              Development of graph neural network surrogates and uncertainty-aware acquisition
+              strategies for optimizing variational quantum circuit architectures under
+              hardware- and noise-aware constraints.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Theme 2</span>
+          <div>
+            <h3>Hybrid Quantum Neural Networks for Time-Series Prediction</h3>
+            <p>
+              Hybrid quantum-classical models for financial time-series regression using
+              custom variational quantum circuits and classical neural components.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Theme 3</span>
+          <div>
+            <h3>Quantum Machine Learning for Quantum Error Correction</h3>
+            <p>
+              Learning-based decoders, transfer-aware evaluation, and quantum architecture
+              search strategies for error correction codes such as Five-Qubit and Steane codes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Publications</p>
+        <h2>Selected Publications</h2>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <h3>HQNN-FSP: A Hybrid Classical-Quantum Neural Network for Regression-Based Financial Stock Market Prediction</h3>
+          <p class="pub-meta">Quantum Machine Intelligence, 2026</p>
+          <p>
+            A hybrid quantum-classical neural network framework for financial time-series forecasting
+            using a custom quantum neural network regressor.
+          </p>
+          <div class="pub-links">
+            <a href="https://link.springer.com/article/10.1007/s42484-026-00390-9" target="_blank" rel="noopener">DOI / Journal Link</a>
+            <a href="https://arxiv.org/abs/2503.15403" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/abs/2503.15403" target="_blank" rel="noopener">BibTeX</a>
+            <!--<a href="#" target="_blank" rel="noopener">DOI / Journal Link</a>-->
+          </div>
+        </article>
+
+        <article class="publication">
+          <h3>Graph-Based Bayesian Optimization for Quantum Architecture Search</h3>
+          <p class="pub-meta">Manuscript / Preprint</p>
+          <p>
+            A graph-based optimization framework combining variational quantum circuits,
+            graph neural network surrogates, and cost-aware Bayesian optimization.
+          </p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2512.09586" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://github.com/Pkcnick" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Research Projects</h2>
+      </div>
+      <div class="content-grid">
+        <div class="card project-card">
+          <h3>BO + VQC + GNN</h3>
+          <p>
+            Cost-aware Bayesian optimization of variational quantum circuits using graph neural
+            network surrogates and uncertainty calibration.
+          </p>
+          <a href="#" target="_blank" rel="noopener">GitHub Repository</a>
+        </div>
+        <div class="card project-card">
+          <h3>QML for Quantum Error Correction</h3>
+          <p>
+            Learning-based decoders and transfer-aware benchmarking for quantum error correction.
+          </p>
+          <a href="#" target="_blank" rel="noopener">Project Page</a>
+        </div>
+        <div class="card project-card">
+          <h3>Hybrid Quantum Neural Networks</h3>
+          <p>
+            Hybrid quantum-classical models for regression and prediction tasks.
+          </p>
+          <a href="#" target="_blank" rel="noopener">Code / Results</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">CV</p>
+        <h2>Curriculum Vitae</h2>
+      </div>
+      <div class="card cv-card">
+        <p>
+          Download my latest academic CV.
+        </p>
+        <a class="button primary" href="Prashant_Kumar_Choudhary_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:prashantkchoudhary.rs.phy22@iitbhu.ac.in">prashantkchoudhary.rs.phy22@iitbhu.ac.in</a></p>
+        </div>
+        <div class="card">
+          <h3>Profiles</h3>
+          <p>
+            <a href="https://scholar.google.com/citations?hl=en&user=aTCilz0AAAAJ" target="_blank" rel="noopener">Google Scholar</a> ·
+            <a href="https://github.com/Pkcnick" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/pkcnick" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://orcid.org/0009-0005-9912-3231" target="_blank" rel="noopener">ORCID</a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Address</h3>
+          <p>Department of Physics, IIT (BHU), Varanasi, India</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Prashant Kumar Choudhary. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      if (nav) {
+        nav.classList.toggle("show");
+      }
+    }
+
+    const canvas = document.getElementById("quantumCanvas");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (canvas && !reduceMotion) {
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+      let animationFrameId = null;
+
+      function particleNumber() {
+        if (window.innerWidth < 600) return 28;
+        if (window.innerWidth < 900) return 42;
+        return 58;
+      }
+
+      function resizeCanvas() {
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(window.innerWidth * ratio);
+        canvas.height = Math.floor(window.innerHeight * ratio);
+        canvas.style.width = `${window.innerWidth}px`;
+        canvas.style.height = `${window.innerHeight}px`;
+        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      }
+
+      function createParticles() {
+        particles = [];
+        const count = particleNumber();
+
+        for (let i = 0; i < count; i++) {
+          particles.push({
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+            vx: (Math.random() - 0.5) * 0.45,
+            vy: (Math.random() - 0.5) * 0.45,
+            radius: Math.random() * 1.8 + 0.8
+          });
+        }
+      }
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
+          if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(93, 220, 255, 0.72)";
+          ctx.fill();
+
+          for (let j = i + 1; j < particles.length; j++) {
+            const q = particles[j];
+            const dx = p.x - q.x;
+            const dy = p.y - q.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            const maxDistance = window.innerWidth < 600 ? 95 : 130;
+
+            if (distance < maxDistance) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(q.x, q.y);
+              ctx.strokeStyle = `rgba(155, 92, 255, ${(1 - distance / maxDistance) * 0.55})`;
+              ctx.lineWidth = 0.7;
+              ctx.stroke();
+            }
+          }
+        }
+
+        animationFrameId = requestAnimationFrame(drawParticles);
+      }
+
+      function restartParticles() {
+        resizeCanvas();
+        createParticles();
+        if (!animationFrameId) {
+          drawParticles();
+        }
+      }
+
+      restartParticles();
+      window.addEventListener("resize", restartParticles);
+    }
+  </script>
+
+</body>
+</html>
