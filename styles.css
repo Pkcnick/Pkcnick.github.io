@@ -221,7 +221,7 @@ main,
 .hero::before {
   content: "";
   position: absolute;
-  inset: 42px 10px;
+  inset: 42px 5px;
   z-index: -1;
   border-radius: 32px;
   background:
