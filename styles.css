@@ -731,3 +731,127 @@ code {
     font-size: 0.92rem;
   }
 }
+
+
+/* ===============================
+   Polished Contact Section
+   =============================== */
+
+.contact-section {
+  position: relative;
+}
+
+.polished-contact-grid {
+  align-items: stretch;
+}
+
+.contact-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 26px;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(93, 220, 255, 0.22), transparent 65%);
+  pointer-events: none;
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(93, 220, 255, 0.28), rgba(155, 92, 255, 0.24));
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 0 22px rgba(93, 220, 255, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.contact-icon i {
+  font-size: 1.35rem;
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.contact-card a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.social-icons a {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 10px 26px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.social-icons a i {
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(93, 220, 255, 0.16);
+  border-color: rgba(93, 220, 255, 0.42);
+  box-shadow:
+    0 0 24px rgba(93, 220, 255, 0.28),
+    0 18px 34px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  .contact-card {
+    padding: 26px 22px;
+  }
+
+  .social-icons a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .social-icons a i {
+    font-size: 1.5rem;
+  }
+}
