@@ -711,3 +711,17 @@ code {
     border: 1px solid #ddd;
   }
 }
+
+/* Fix long email going outside the contact card */
+.contact-grid .card {
+  min-width: 0;
+}
+
+.contact-grid a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.contact-grid p {
+  overflow-wrap: anywhere;
+}
